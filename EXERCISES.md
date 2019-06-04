@@ -4,22 +4,22 @@ Consider our `youtube` zip-archived`.csv` data-set of trending Youtube videos an
 
 1. Preparations and hypotheses
 
-  - Read in the `youtube.zip` dataset and create two arrays that contain the likes for the videos of the channels `'ZDF'` and `'RT Deutsch'`, respectively.
-  - In our data-set, how many videos belong to the channel `'ZDF'`? How many belong to `'RT Deutsch'`? Store the results in the variables `n_zdf` (5) and `n_rt` (5).  
-  - Calculate the average likes per video for both channels and store the results in the variables `mean_likes_zdf` (5) and `mean_likes_rt` (5).
+    - Read in the `youtube.zip` dataset and create two arrays that contain the likes for the videos of the channels `'ZDF'` and `'RT Deutsch'`, respectively.
+    - In our data-set, how many videos belong to the channel `'ZDF'`? How many belong to `'RT Deutsch'`? Store the results in the variables `n_zdf` (5) and `n_rt` (5).  
+    - Calculate the average likes per video for both channels and store the results in the variables `mean_likes_zdf` (5) and `mean_likes_rt` (5).
 
 
 2. Significant differences between the average likes per video
 
-    - In your *report* answer the following questions (max 1 sentence per question): What is your null hypothesis? What is your alternative hypothesis? Looking at the average likes, what do you think will be the outcome of the test (-> *report*, 15)?
-    - Perform a two-sample t-test with the function [`scipy.stats.ttest_ind`](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.ttest_ind.html) from the `scipy.stats` package. We do not perform a F-test and just assume equal population variances.  
-    - Store the result of the test function in a variable with the name `test_likes` (15).
+      - In your *report* answer the following questions (max 1 sentence per question): What is your null hypothesis? What is your alternative hypothesis? Looking at the average likes, what do you think will be the outcome of the test (-> *report*, 15)?
+      - Perform a two-sample t-test with the function [`scipy.stats.ttest_ind`](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.ttest_ind.html) from the `scipy.stats` package. We do not perform a F-test and just assume equal population variances.  
+      - Store the result of the test function in a variable with the name `test_likes` (15).
 
 
 3. Extensions and interpretation
 
-  - Perform the same test for the average number of views per video and the average number of comments per video. Store the test results in the variables `test_views` (5) and `test_comments` (5).
-  - In your *report*, analyze the test results for the three tests (max 1-3 short sentence per question). How do you interpret the p-value? Which null hypotheses can be rejected (-> *report*, 20)?
+    - Perform the same test for the average number of views per video and the average number of comments per video. Store the test results in the variables `test_views` (5) and `test_comments` (5).
+    - In your *report*, analyze the test results for the three tests (max 1-3 short sentence per question). How do you interpret the p-value? Which null hypotheses can be rejected (-> *report*, 20)?
 
 Notes
 
