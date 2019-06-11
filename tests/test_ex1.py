@@ -25,14 +25,14 @@ def test_mean_likes_rt():
 
 @pytest.mark.points(15)
 def test_test_likes():
-    assert ex1.test_likes == approx((-0.0205, 0.9837), abs=1e-2)
+    assert (ex1.test_likes == approx((-0.0205, 0.9837), abs=1e-2) or ex1.test_likes == approx((0.0205, 0.9837), abs=1e-2))
 
 
 @pytest.mark.points(5)
 def test_test_views():
-    assert ex1.test_views == approx((-3.5215, 0.0006), abs=1e-2)
+    assert (ex1.test_views == approx((-3.5215, 0.0006), abs=1e-2) or ex1.test_views == approx((3.5215, 0.0006), abs=1e-2))
 
 
 @pytest.mark.points(5)
 def test_test_comments():
-    assert ex1.test_comments == approx((2.5031, 0.0133), abs=1e-2)
+    assert (ex1.test_comments == approx((2.5031, 0.0133), abs=1e-2) or ex1.test_comments == approx((-2.5031, 0.0133), abs=1e-2))
